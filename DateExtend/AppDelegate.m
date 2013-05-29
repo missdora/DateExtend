@@ -7,12 +7,33 @@
 //
 
 #import "AppDelegate.h"
+#import "DateExtend.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    DateExtend *date = [[DateExtend alloc] initWithCalendar:calendar];
+    NSLog(@"date %@ year %d", [date toString:@"yyyy-MM-dd HH:mm:ss"], [date year]);
+    NSLog(@"week of month %d", [date weekOfMonth]);
+    NSLog(@"week of year %d", [date weekOfYear]);
+    
+    DateExtend *dateA = [[DateExtend alloc] initWithCalendar:calendar dateStr:@"2013-05-29" dateFormat:@"yyyy-MM-dd"];
+    
+    DateExtend *dateB = [[DateExtend alloc] initWithCalendar:calendar dateStr:@"2013-05-01" dateFormat:@"yyyy-MM-dd"];
+    NSLog(@"day diff %d", [dateA diffDay:dateB]);
+    NSLog(@"week diff %d", [dateA diffWeek:dateB]);
+    
+    DateExtend *dateC = [[DateExtend alloc] initWithCalendar:calendar dateStr:@"2013-01-01" dateFormat:@"yyyy-MM-dd"];
+    NSLog(@"month diff %d", [dateA diffMonth:dateC]);
+    
+    NSLog(@"dateB add 28 days %@", [[dateB dateByDayOffset:28] toString:@"yyyy-MM-dd"]);
+    NSLog(@"dateB add 4 weeks %@", [[dateB dateByWeekOffset:4] toString:@"yyyy-MM-dd"]);
+    NSLog(@"dateC add 4 months %@", [[dateC dateByMonthOffset:4] toString:@"yyyy-MM-dd"]);
+
+
     return YES;
 }
 							

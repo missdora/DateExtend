@@ -18,6 +18,7 @@
 		42C7CCDA17543EB4004E0E2A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C7CCD917543EB4004E0E2A /* Default-568h@2x.png */; };
 		42C7CCDD17543EB4004E0E2A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C7CCDB17543EB4004E0E2A /* MainStoryboard.storyboard */; };
 		42C7CCE017543EB4004E0E2A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C7CCDF17543EB4004E0E2A /* ViewController.m */; };
+		42C7CCEB1754456E004E0E2A /* DateExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C7CCEA1754456E004E0E2A /* DateExtend.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		42C7CCDC17543EB4004E0E2A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		42C7CCDE17543EB4004E0E2A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		42C7CCDF17543EB4004E0E2A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		42C7CCE91754456E004E0E2A /* DateExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateExtend.h; sourceTree = "<group>"; };
+		42C7CCEA1754456E004E0E2A /* DateExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateExtend.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,8 @@
 		42C7CCB717543EB4004E0E2A = {
 			isa = PBXGroup;
 			children = (
+				42C7CCE91754456E004E0E2A /* DateExtend.h */,
+				42C7CCEA1754456E004E0E2A /* DateExtend.m */,
 				42C7CCC917543EB4004E0E2A /* DateExtend */,
 				42C7CCC217543EB4004E0E2A /* Frameworks */,
 				42C7CCC117543EB4004E0E2A /* Products */,
@@ -134,7 +139,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = blackXblack;
+				ORGANIZATIONNAME = MissDora;
 			};
 			buildConfigurationList = 42C7CCBB17543EB4004E0E2A /* Build configuration list for PBXProject "DateExtend" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -176,6 +181,7 @@
 				42C7CCD017543EB4004E0E2A /* main.m in Sources */,
 				42C7CCD417543EB4004E0E2A /* AppDelegate.m in Sources */,
 				42C7CCE017543EB4004E0E2A /* ViewController.m in Sources */,
+				42C7CCEB1754456E004E0E2A /* DateExtend.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +306,7 @@
 				42C7CCE517543EB4004E0E2A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
